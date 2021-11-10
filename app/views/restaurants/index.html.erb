@@ -1,0 +1,8 @@
+<h1> Trop cool, des restos en mousse</h1>
+<ul>
+  <%  @restaurants.each do |restaurant| %>
+  <li><%=  link_to restaurant.name, restaurant_path(restaurant.id) %> |
+    <%= link_to "Edit", edit_restaurant_path(restaurant.id) %> </li>
+  <% end %>
+
+</ul>
